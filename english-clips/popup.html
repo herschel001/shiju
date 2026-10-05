@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>拾句</title><link rel="stylesheet" href="ui.css"></head>
+<body class="popup"><header><img class="mark" src="icons/icon.svg" alt=""><div><h1>拾句</h1><p>让好表达，留下来。</p></div><label class="switch" title="开启或暂停快捷键截图"><input id="enabled" type="checkbox" aria-label="开启截图"><span></span></label></header>
+<main><div class="shortcut-card"><span class="eyebrow">遇到一句想记住的话</span><kbd id="shortcut">读取快捷键…</kbd><p>按一下，收藏画面与字幕。</p></div>
+<div class="mask-card"><div><strong>遮挡字幕</strong><small>拖动色块移动、四边缩放，右键可关闭。<br>切换快捷键：<kbd id="mask-shortcut">读取中…</kbd></small></div><label class="switch mask-switch" title="遮挡字幕"><input id="toggle-mask" type="checkbox" aria-label="遮挡字幕"><span></span></label></div>
+<button id="capture" class="primary full">收藏当前画面 <span>↗</span></button><div id="status" class="status" role="status">准备就绪</div><button id="organize" class="secondary full organize-entry" type="button" hidden disabled>整理已收藏截图 <span>↗</span></button><div class="details"><span>保存到</span><button id="destination" class="destination-button" type="button" disabled>下载 / 英语截图</button></div></main>
+<footer><button id="options" class="text-button">保存与画质设置</button><button id="shortcuts" class="text-button">修改快捷键 ↗</button></footer><script type="module" src="popup.js"></script></body></html>

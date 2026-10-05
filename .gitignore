@@ -1,0 +1,30 @@
+# macOS and Python caches
+.DS_Store
+.AppleDouble
+._*
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.codex/
+native-config.json
+organize-config.json
+organize-job.json
+organize-[0-9a-f]*.json
+
+# Old packages and local backups
+*.crx
+backups/
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

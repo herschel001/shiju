@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": { "type": "integer" },
+          "subtitle": { "type": "string" },
+          "phrase": { "type": "string" },
+          "confidence": { "type": "string", "enum": ["high", "low"] }
+        },
+        "required": ["index", "subtitle", "phrase", "confidence"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["items"],
+  "additionalProperties": false
+}

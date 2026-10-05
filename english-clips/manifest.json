@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "拾句 · B站英语截图",
+  "version": "1.5.3",
+  "description": "用快捷键收藏 B 站视频里的英语表达，保留字幕，本地压缩并保存到文件夹。",
+  "minimum_chrome_version": "122",
+  "permissions": ["activeTab", "scripting", "storage", "downloads", "nativeMessaging"],
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" }, "default_popup": "popup.html", "default_title": "拾句 · 收藏当前画面" },
+  "options_page": "options.html",
+  "commands": {
+    "capture": {
+      "suggested_key": { "default": "Ctrl+Shift+Y", "mac": "Command+Shift+Y" },
+      "description": "收藏当前 B 站视频画面（含字幕）"
+    },
+    "toggle-mask": {
+      "suggested_key": { "default": "Ctrl+Shift+U", "mac": "Command+Shift+U" },
+      "description": "遮挡或取消遮挡当前 B 站视频字幕"
+    },
+    "mask-on": {
+      "description": "遮挡当前 B 站视频字幕"
+    },
+    "mask-off": {
+      "description": "取消遮挡当前 B 站视频字幕"
+    }
+  }
+}
